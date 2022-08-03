@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9646395628998F95006523E6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646395528998F95006523E6 /* RegisterView.swift */; };
+		96A7A8C1289968F3006870ED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7A8C0289968F3006870ED /* LoginView.swift */; };
 		96C42ADD2893415C00EC142C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C42ADC2893415C00EC142C /* AppDelegate.swift */; };
 		96C42ADF2893415C00EC142C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C42ADE2893415C00EC142C /* SceneDelegate.swift */; };
 		96C42AE12893415C00EC142C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C42AE02893415C00EC142C /* ViewController.swift */; };
@@ -14,9 +16,13 @@
 		96C42AE72893415C00EC142C /* CompraEVenda_StoryBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96C42AE52893415C00EC142C /* CompraEVenda_StoryBoard.xcdatamodeld */; };
 		96C42AE92893416000EC142C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C42AE82893416000EC142C /* Assets.xcassets */; };
 		96C42AEC2893416000EC142C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C42AEA2893416000EC142C /* LaunchScreen.storyboard */; };
+		96C42AF5289341A500EC142C /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C42AF4289341A500EC142C /* FirstScreen.swift */; };
+		96CB469D289AD92F0070F7A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB469C289AD92E0070F7A4 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9646395528998F95006523E6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		96A7A8C0289968F3006870ED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		96C42AD92893415C00EC142C /* CompraEVenda-StoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CompraEVenda-StoryBoard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C42ADC2893415C00EC142C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C42ADE2893415C00EC142C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		96C42AE82893416000EC142C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96C42AEB2893416000EC142C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96C42AED2893416000EC142C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96C42AF4289341A500EC142C /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		96CB469C289AD92E0070F7A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9646395328998F77006523E6 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9646395428998F86006523E6 /* RegisterView */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		9646395428998F86006523E6 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				9646395528998F95006523E6 /* RegisterView.swift */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		96A7A8BD289958FA006870ED /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				96C42ADC2893415C00EC142C /* AppDelegate.swift */,
+				96C42ADE2893415C00EC142C /* SceneDelegate.swift */,
+				96C42AE02893415C00EC142C /* ViewController.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		96A7A8BE289968CD006870ED /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				96A7A8BF289968DF006870ED /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		96A7A8BF289968DF006870ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96A7A8C0289968F3006870ED /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		96C42AD02893415C00EC142C = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +108,11 @@
 		96C42ADB2893415C00EC142C /* CompraEVenda-StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				96C42ADC2893415C00EC142C /* AppDelegate.swift */,
-				96C42ADE2893415C00EC142C /* SceneDelegate.swift */,
-				96C42AE02893415C00EC142C /* ViewController.swift */,
+				96CB469A289AD9130070F7A4 /* Home */,
+				9646395328998F77006523E6 /* Register */,
+				96A7A8BE289968CD006870ED /* Login */,
+				96C42AF32893418B00EC142C /* FirstScreen */,
+				96A7A8BD289958FA006870ED /* AppDelegate */,
 				96C42AE22893415C00EC142C /* Main.storyboard */,
 				96C42AE82893416000EC142C /* Assets.xcassets */,
 				96C42AEA2893416000EC142C /* LaunchScreen.storyboard */,
@@ -68,6 +120,30 @@
 				96C42AE52893415C00EC142C /* CompraEVenda_StoryBoard.xcdatamodeld */,
 			);
 			path = "CompraEVenda-StoryBoard";
+			sourceTree = "<group>";
+		};
+		96C42AF32893418B00EC142C /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				96C42AF4289341A500EC142C /* FirstScreen.swift */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		96CB469A289AD9130070F7A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				96CB469B289AD91A0070F7A4 /* HomeView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		96CB469B289AD91A0070F7A4 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				96CB469C289AD92E0070F7A4 /* HomeView.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A7A8C1289968F3006870ED /* LoginView.swift in Sources */,
 				96C42AE12893415C00EC142C /* ViewController.swift in Sources */,
 				96C42AE72893415C00EC142C /* CompraEVenda_StoryBoard.xcdatamodeld in Sources */,
+				9646395628998F95006523E6 /* RegisterView.swift in Sources */,
 				96C42ADD2893415C00EC142C /* AppDelegate.swift in Sources */,
+				96CB469D289AD92F0070F7A4 /* HomeView.swift in Sources */,
 				96C42ADF2893415C00EC142C /* SceneDelegate.swift in Sources */,
+				96C42AF5289341A500EC142C /* FirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
