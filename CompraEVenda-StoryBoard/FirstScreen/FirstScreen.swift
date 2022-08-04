@@ -23,18 +23,8 @@ class FirstScreen: UIViewController {
 
         loginButton.layer.cornerRadius = 5
         loginButton.layer.borderWidth = 1
+        loginButton.backgroundColor = .systemBackground
         loginButton.layer.borderColor = UIColor.tintColor.cgColor
-        loginButton.backgroundColor = nil
     }
-    
-//    func configButton() {
-//
-//        let button = UIButton()
-//        button.layer.cornerRadius = 5
-//        button.layer.borderWidth = 1
-//        button.layer.borderColor = UIColor.systemCyan.cgColor
-//        button.backgroundColor = nil
-//
-//    }
     
 }

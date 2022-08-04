@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9646395628998F95006523E6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646395528998F95006523E6 /* RegisterView.swift */; };
+		9665773C289C2E44001DF2B9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665773B289C2E44001DF2B9 /* MenuView.swift */; };
 		96A7A8C1289968F3006870ED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7A8C0289968F3006870ED /* LoginView.swift */; };
 		96C42ADD2893415C00EC142C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C42ADC2893415C00EC142C /* AppDelegate.swift */; };
 		96C42ADF2893415C00EC142C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C42ADE2893415C00EC142C /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		9646395528998F95006523E6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9665773B289C2E44001DF2B9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		96A7A8C0289968F3006870ED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		96C42AD92893415C00EC142C /* CompraEVenda-StoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CompraEVenda-StoryBoard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C42ADC2893415C00EC142C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,22 @@
 				9646395528998F95006523E6 /* RegisterView.swift */,
 			);
 			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		96657739289C2D6A001DF2B9 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9665773A289C2D71001DF2B9 /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		9665773A289C2D71001DF2B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9665773B289C2E44001DF2B9 /* MenuView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		96A7A8BD289958FA006870ED /* AppDelegate */ = {
@@ -108,6 +126,7 @@
 		96C42ADB2893415C00EC142C /* CompraEVenda-StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				96657739289C2D6A001DF2B9 /* Menu */,
 				96CB469A289AD9130070F7A4 /* Home */,
 				9646395328998F77006523E6 /* Register */,
 				96A7A8BE289968CD006870ED /* Login */,
@@ -221,6 +240,7 @@
 				96C42AE12893415C00EC142C /* ViewController.swift in Sources */,
 				96C42AE72893415C00EC142C /* CompraEVenda_StoryBoard.xcdatamodeld in Sources */,
 				9646395628998F95006523E6 /* RegisterView.swift in Sources */,
+				9665773C289C2E44001DF2B9 /* MenuView.swift in Sources */,
 				96C42ADD2893415C00EC142C /* AppDelegate.swift in Sources */,
 				96CB469D289AD92F0070F7A4 /* HomeView.swift in Sources */,
 				96C42ADF2893415C00EC142C /* SceneDelegate.swift in Sources */,
