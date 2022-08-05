@@ -30,6 +30,15 @@ class RegisterView: UIViewController {
     }
  
     @IBAction func registerButton(_ sender: UIButton) {
+        
+        // Criando o alerta
+        let alert = UIAlertController(title: "CADASTRO", message: "Cadastro realizado com sucesso!", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        // Mostrando o alerta na tela
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
    
