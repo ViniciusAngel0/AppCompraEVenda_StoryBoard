@@ -65,13 +65,26 @@ class MenuView: UIViewController {
     @IBAction func productButtonTapped(_ sender: UIButton) {
         
         // Criando o alerta
-        let alert = UIAlertController(title: "PRODUTO", message: "Selecione uma opção", preferredStyle: UIAlertController.Style.actionSheet)
+        let alert = UIAlertController(title: "PRODUTO", message: "Selecione uma opção", preferredStyle: .actionSheet)
         
-        alert.addAction(UIAlertAction(title: "Cadastrar", style: UIAlertAction.Style.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Pesquisar", style: UIAlertAction.Style.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertAction.Style.destructive, handler: nil))
+        let action1: UIAlertAction = UIAlertAction(title: "Cadastrar", style: .default) {
+            (action) in
+            self.performSegue(withIdentifier: "registerProduct", sender: nil)
+        }
+        
+        let action2: UIAlertAction = UIAlertAction(title: "Pesquisar", style: .default) {
+            (action) in
+            self.performSegue(withIdentifier: "searchProduct", sender: nil)
+        }
+        
+        let action3: UIAlertAction = UIAlertAction(title: "Cancelar", style: .destructive) {
+            (action) in
+        }
         
         // Mostrando o alerta na tela
+        alert.addAction(action1)
+        alert.addAction(action2)
+        alert.addAction(action3)
         self.present(alert, animated: true, completion: nil)
         
     }

@@ -22,7 +22,6 @@ class HomeView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupConfig()
         setupContraints()
         
