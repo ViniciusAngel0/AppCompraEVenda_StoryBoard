@@ -21,10 +21,7 @@ class FirstScreen: UIViewController {
         registerButton.clipsToBounds = true
         registerButton.layer.cornerRadius = 5
 
-        loginButton.layer.cornerRadius = 5
-        loginButton.layer.borderWidth = 1
-        loginButton.backgroundColor = .systemBackground
-        loginButton.layer.borderColor = UIColor.tintColor.cgColor
+        borderButton(button: loginButton)
     }
     
 }

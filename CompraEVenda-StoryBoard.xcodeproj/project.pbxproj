@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9646395628998F95006523E6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646395528998F95006523E6 /* RegisterView.swift */; };
+		9660E28428A28A1500D0F3AE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9660E28328A28A1500D0F3AE /* RegisterController.swift */; };
 		9665773C289C2E44001DF2B9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665773B289C2E44001DF2B9 /* MenuView.swift */; };
 		96A7A8C1289968F3006870ED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7A8C0289968F3006870ED /* LoginView.swift */; };
 		96C42ADD2893415C00EC142C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C42ADC2893415C00EC142C /* AppDelegate.swift */; };
@@ -22,10 +23,12 @@
 		96EC5AF4289D470F000B3B69 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5AF3289D470F000B3B69 /* NotificationView.swift */; };
 		96EC5AF9289D4B00000B3B69 /* RegisterClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5AF8289D4B00000B3B69 /* RegisterClientView.swift */; };
 		96EC5AFE289D65F8000B3B69 /* RegisterProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5AFD289D65F8000B3B69 /* RegisterProductView.swift */; };
+		96EC5B01289D857D000B3B69 /* SetupElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5B00289D857D000B3B69 /* SetupElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9646395528998F95006523E6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9660E28328A28A1500D0F3AE /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		9665773B289C2E44001DF2B9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		96A7A8C0289968F3006870ED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		96C42AD92893415C00EC142C /* CompraEVenda-StoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CompraEVenda-StoryBoard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +45,7 @@
 		96EC5AF3289D470F000B3B69 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		96EC5AF8289D4B00000B3B69 /* RegisterClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterClientView.swift; sourceTree = "<group>"; };
 		96EC5AFD289D65F8000B3B69 /* RegisterProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductView.swift; sourceTree = "<group>"; };
+		96EC5B00289D857D000B3B69 /* SetupElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +62,26 @@
 		9646395328998F77006523E6 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				9646395428998F86006523E6 /* RegisterView */,
+				9660E28228A289F500D0F3AE /* Controller */,
+				9646395428998F86006523E6 /* View */,
 			);
 			path = Register;
 			sourceTree = "<group>";
 		};
-		9646395428998F86006523E6 /* RegisterView */ = {
+		9646395428998F86006523E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9646395528998F95006523E6 /* RegisterView.swift */,
 			);
-			path = RegisterView;
+			path = View;
+			sourceTree = "<group>";
+		};
+		9660E28228A289F500D0F3AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9660E28328A28A1500D0F3AE /* RegisterController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		96657739289C2D6A001DF2B9 /* Menu */ = {
@@ -132,6 +145,7 @@
 		96C42ADB2893415C00EC142C /* CompraEVenda-StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				96EC5AFF289D8568000B3B69 /* SetupElements */,
 				96EC5AFA289D65B1000B3B69 /* Product */,
 				96EC5AF5289D4AC8000B3B69 /* Client */,
 				96EC5AEF289D46E5000B3B69 /* Notification */,
@@ -254,6 +268,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		96EC5AFF289D8568000B3B69 /* SetupElements */ = {
+			isa = PBXGroup;
+			children = (
+				96EC5B00289D857D000B3B69 /* SetupElements.swift */,
+			);
+			path = SetupElements;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,8 +357,10 @@
 				96CB469D289AD92F0070F7A4 /* HomeView.swift in Sources */,
 				96C42ADF2893415C00EC142C /* SceneDelegate.swift in Sources */,
 				96C42AF5289341A500EC142C /* FirstScreen.swift in Sources */,
+				9660E28428A28A1500D0F3AE /* RegisterController.swift in Sources */,
 				96EC5AF4289D470F000B3B69 /* NotificationView.swift in Sources */,
 				96EC5AF9289D4B00000B3B69 /* RegisterClientView.swift in Sources */,
+				96EC5B01289D857D000B3B69 /* SetupElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

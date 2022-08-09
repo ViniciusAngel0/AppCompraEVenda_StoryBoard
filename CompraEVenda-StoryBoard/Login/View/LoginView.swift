@@ -18,10 +18,30 @@ class LoginView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginButton.layer.cornerRadius = 5
-        loginButton.layer.borderWidth = 1
-        loginButton.layer.borderColor = UIColor.tintColor.cgColor
+       borderButton(button: loginButton)
+        
+    }
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        
+        
         
     }
     
+    @IBAction func resetButton(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: "Erro ao entrar", message: "Digite seu CPF", preferredStyle: .alert)
+        
+        alert.addTextField{ field in
+            field.placeholder = "CPF"
+            field.returnKeyType = .done
+            field.keyboardType = .numberPad
+        }
+        
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { UIAlertAction
+            in
+            
+        }))
+        present(alert, animated: true)
+    }
 }

@@ -10,9 +10,16 @@ import UIKit
 
 class RegisterClientView: UIViewController {
     
+    @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        borderButton(button: registerButton)
+    }
+    
+    @IBAction func registerButtonTapped(_ sender: UIButton) {
+        
+        
     }
     
 }

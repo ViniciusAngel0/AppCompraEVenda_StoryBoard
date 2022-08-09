@@ -119,25 +119,10 @@ class MenuView: UIViewController {
     
     func configElements() {
         
-        clientView.backgroundColor = .systemBackground
-        clientView.layer.cornerRadius = 15
-        clientView.layer.borderWidth = 1
-        clientView.layer.borderColor = UIColor.purple.cgColor
-        
-        productView.backgroundColor = .systemBackground
-        productView.layer.cornerRadius = 15
-        productView.layer.borderWidth = 1
-        productView.layer.borderColor = UIColor.orange.cgColor
-        
-        serviceView.backgroundColor = .systemBackground
-        serviceView.layer.cornerRadius = 15
-        serviceView.layer.borderWidth = 1
-        serviceView.layer.borderColor = UIColor.yellow.cgColor
-        
-        requestView.backgroundColor = .systemBackground
-        requestView.layer.cornerRadius = 15
-        requestView.layer.borderWidth = 1
-        requestView.layer.borderColor = UIColor.systemMint.cgColor
+        menuView(view: clientView)
+        menuView(view: productView)
+        menuView(view: serviceView)
+        menuView(view: requestView)
         
     }
 }
